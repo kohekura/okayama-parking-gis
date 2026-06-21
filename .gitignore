@@ -2,8 +2,11 @@
 parking_raw.json
 plateau_luse/
 
-# folium出力のHTML（埋め込みデータで重い。README用には別途スクリーンショットを使う）
-*.html
+# folium出力のHTMLのうち、低未利用地マップ単体・OSM単体・PLATEAU単体マップは
+# 容量が大きく重複も多いため除外。combined_map.html（統合マップ）のみ公開する。
+low_utilization_map.html
+parking_map.html
+parking_plateau_map.html
 
 # デバッグ・トラブル対応用の使い捨てスクリプト
 diag_coords.py
@@ -16,3 +19,6 @@ repair_inspect.py
 Thumbs.db
 __pycache__/
 *.pyc
+
+# 内容未確認のため一旦除外（確認後に必要であれば個別追加）
+files.zip
